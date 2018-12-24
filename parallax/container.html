@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+
+        #box01 {
+            border-top: 30px solid burlywood;
+        }
+
+        /* 最上方選單，裝飾用的，沒有功能 */
+        #box02 {
+            height: 60vh;
+            background-image: url(https://arbitmusingsdotcom.files.wordpress.com/2015/11/intofire2.jpg);
+            background-size: cover;
+            background-position-y: 20%;
+            background-position-x: 20%;
+            background-attachment: fixed;
+        }
+
+        /* 背景圖片的設定 */
+        #box03 {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: burlywood;
+            padding: 10px;
+
+        }
+
+        #box03 a.nav_link {
+            color: white;
+            font-size: 20px;
+            padding: 20px 20px;
+            text-decoration: none;
+            display: block;
+            float: left;
+        }
+
+        /* 下方連結列 */
+        #box04 {
+            background-color: #333;
+            padding: 55px;
+
+        }
+
+        #box04 .left_box {
+            float: left;
+            width: 50%;
+            padding: 0 20px;
+            color: white;
+            font-size: 25px;
+            font-family: microsoft jhengHei;
+            letter-spacing: 5px;
+
+        }
+
+        #box04 .left_box img {
+            width: 115%;
+
+        }
+
+        /* 區塊四 */
+        #box05 {
+            background-color: white;
+            padding: 50px 0;
+            color: #222222;
+            font-family: microsoft jhengHei;
+            letter-spacing: 5px;
+            font-size: 25px;
+
+        }
+
+        #box05 .container h1 {
+            text-align: left;
+
+        }
+
+        #box05 .container p {
+            -webkit-column-count: 3;
+            /* Chrome, Safari, Opera */
+            -moz-column-count: 3;
+            /* Firefox */
+            column-count: 3;
+
+            -webkit-column-gap: 40px;
+            /* Chrome, Safari, Opera */
+            -moz-column-gap: 40px;
+            /* Firefox */
+            column-gap: 40px;
+        }
+
+        #box06 {
+            background-color: #333;
+            color: white;
+            padding: 50px 0;
+
+        }
+
+        #box06 .container.left_box {
+
+            text-align: center;
+
+        }
+
+        #box06 .left_box {
+            width: 33.33%;
+            padding: 0 20px;
+            float: left;
+            font-size: 25px;
+            font-family: microsoft jhengHei;
+        }
+
+        .h1 {
+            color: white;
+            font-size: 25px;
+            font-family: microsoft jhengHei;
+            text-align: left;
+
+        }
+
+        #box06 .left_box img {
+            width: 100%;
+        }
+
+        #box07 {
+            padding: 70px 370px;
+            
+
+        }
+
+        #box07.img {
+            image-rendering: contain;
+            position: relative;
+            background-color: white;
+            padding-bottom: 0px 50px;
+        }
+        #box07 .h1 {
+            color: #333;
+            font-size: 25px;
+            font-family: microsoft jhengHei;
+            text-align: center;
+        }
+        #box07 .p {
+            color: #333;
+            font-size: 30px;
+            font-family: microsoft jhengHei;
+            text-align: center; 
+        }
+
+        footer{
+            font-size: 12px;
+            background-color: #333;
+            color: #999;
+            padding: 8px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box01"></div>
+
+    <div id="box02"></div>
+
+    <div id="box03">
+        <div class="containner">
+            <a class="nav_link" href="#section 1">消防員</a>
+            <a class="nav_link" href="#section 2">職務</a>
+            <a class="nav_link" href="#section 3">社會認同</a>
+            <a class="nav_link" href="#section 4">偉大的他們</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div id="box04">
+        <div class="container">
+            <div class="left_box">
+                <h1>消防員</h1>
+                <p>消防員為政府或民間團體所成立的滅火及救援團體的成員，通常是一個國家所成立專門司職於滅火及救援等事項的專門部門最底層的分枝，
+                    為站在第一線的政府機關；消防員即為其中成員。一些熱心的民間人士也會在政府的許可下成立民間的消防隊，簡稱「義消」，
+                    一般皆為服務性質，熱心服務大眾，屬志工類型。消防是高危險的工作，存在比較高的殉職機率。
+                </p>
+
+            </div>
+            <div class="left_box">
+                <img src="https://d3tv8y14ogpztx.cloudfront.net/extra_images/images/000/009/114/wide_product/Fireman-Uniform.jpg"
+                    alt="">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        </section>
+    </div>
+
+    <div id="box05">
+        <div class="container">
+            <h1>職務</h1>
+            <p>消防員工作一般有兩類，一種是行政工作，主要是負責文書、聯絡、消防安全設備稽查與消防教育宣導等工作
+                ；另一種是實戰工作，主要負責滅火與拯救工作。但在實際分配中，不同的編制會有不同的工作重點。
+                專職消防隊一般主要負責重大災害事故和其他以搶救人員生命的應急救援，對志願消防隊等消防組織進行業務指導
+                ；有時還會根據撲救火災的需要，調動指揮專職消防隊參加一些火災撲救。而志願消防組織一般是制定防火安全公約，普及消防知識、協助進行防火安全檢查，有時還需協助專職消防隊的火災撲救工作。
+            </p>
+        </div>
+    </div>
+
+    <div id="box06">
+        <div class="container">
+            <div class="h1">
+                <h1>社會認同</h1>
+            </div>
+            <div class="left_box">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP6gtYATfvY5ldf4BqyCeD7E4K1xrWPI5J9rY38eNTMhdICG2APQ"
+                    alt="">
+                <p>消防員由於其職業的特殊性質，經常參與搶救公私財產及民眾生命，其地位被社會廣泛地認同。
+                    在西方國家，消防員這一職業由於其危險性以及不畏危險的專業精神，被認為是廣受尊重的一個職業。</p>
+            </div>
+            <div class="left_box">
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+                <p>在2001年美國紐約市發生的911事件當中，紐約市的消防員於搶救大樓傷員及控制大火上付出了巨大的犧牲，他們的敬業精神令美國甚至於其他國家的民眾為之動容。
+                </p>
+            </div>
+            <div class="left_box">
+                <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/About/General/2015/1/28/1422442762923/Thats-me-David-Tree-010.jpg?width=300&quality=85&auto=format&fit=max&s=e20867916f691bce7d148324703a5752"
+                    alt="">
+                <p>而2009年澳洲維州山火中，一隻被燒傷的無尾熊主動的向一名消防員靠攏，並將燒傷的手臂放在消防員的手中，而消防員對它進行餵水的照片更是令全球為之感動。
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div id="box07">
+        <img src="https://www.wildlifeimages.org/wp-content/uploads/2017/09/A-New-Design-5-1.jpg" alt="">
+       <h1>給未來的消防員 全忠政 </h1>
+        <p>看到你為了自己熱愛的事去努力、放手一搏，為了自己 為了家人 為了你的未來，
+            過程中雖然很辛苦，但也有滿滿的回憶，有煩惱、有歡笑、有成長、有很多酸甜苦辣，
+            但你很厲害，都堅持的走到現在了。
+            希望你明年考試加油 在為自己奮力一次 之後的路 我們一起走。
+            
+        
+        </p> 
+        <div class="clearfix"></div>
+    </div>
+    <footer>
+        <div class="container">
+            Copyright © 2018 Apple Inc. 保留一切權利。
+        </div>
+    </footer>
+</body>
+
+</html>
