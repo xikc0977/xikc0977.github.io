@@ -1,0 +1,521 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+
+        .container {
+            max-width: 1200px;
+            right: 64px;
+            margin: 0 auto;
+
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        /* 最上方的選單，目前無任何功用 */
+        #sub_nav {
+            border-top: 30px solid #EAADBC;
+        }
+
+
+        /* 背景圖片選單 */
+        #bg_banner {
+            height: 70vh;
+            background-image: url(1.jpg);
+            background-size: cover;
+            background-position-y: 65%;
+            background-attachment: fixed;
+        }
+
+        #bg_banner .container {
+            height: 70vh;
+            position: relative;
+        }
+
+        #bg_banner .title {
+            margin: 0;
+            position: absolute;
+            top: 2%;
+            left: -150px;
+            transform: translateY(40%);
+            color: white;
+            font-size: 26px;
+            line-height: 55px;
+            letter-spacing: 9px;
+            text-shadow: 3px 3px 5px#1461BB;
+            background-color: rgba(114, 116, 133, 0.952);
+            padding: 5px 17px;
+        }
+
+
+
+        /* 主要選單 */
+        #main_nav {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #EAADBC;
+        }
+
+        #main_nav a.nav_link {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            float: left;
+        }
+
+        /* 以上是第一區 */
+        #section1 {
+            background-color: white;
+            padding: 80px 0;
+
+        }
+
+        #section1.container.left_box {
+            text-align: center;
+
+        }
+
+        #section1 div.left_box {
+            float: left;
+            width: 33.33%;
+            padding: 0 20px;
+
+        }
+
+        #section1.left_box img {
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+
+        #section1 h1 {
+            font-family: microsoft jhengHei;
+            color: #eaadbc;
+            letter-spacing: 2px;
+        }
+
+
+        #section1 p {
+            font-size: 20px;
+            color: rgb(133, 22, 105);
+            font-family: microsoft jhengHei;
+            letter-spacing: 2px;
+
+        }
+
+        /* 以上是第二區 */
+        #section_2 h1 {
+            text-align: center;
+            margin: 10 auto;
+            color: rgb(133, 22, 105);
+            font-size: 50px;
+            letter-spacing: 2px;
+
+        }
+
+        #section_2 p {
+            text-align: center;
+            margin: 51px;
+            font-size: 23px;
+            letter-spacing: 2px;
+            color: #3a101b;
+        }
+
+        #section_2 .left_box {
+            float: left;
+            width: 50%;
+            height: 22%;
+            background-image: url(g.jpg);
+            background-size: cover;
+            padding: 50px;
+        }
+
+        #section_2 .right_box {
+            float: left;
+            width: 50%;
+            height: 22%;
+            background-image: url(i.jpg);
+            background-size: cover;
+            padding: 50px;
+        }
+
+        /* 以上是第三區 */
+        #section_3 {
+            background-color: white;
+            padding: 80px 0;
+
+
+        }
+
+        #section_3.container.left_box {
+            text-align: center;
+
+
+        }
+
+        #section_3 div.left_box {
+            float: left;
+            width: 50%;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        #section_3 div.right_box {
+            float: left;
+            width: 50%;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .container_1 {
+            padding: 0 450px;
+        }
+
+        #section_3 h1 {
+            text-align: center;
+            font-family: microsoft jhengHei;
+            color: #eaadbc;
+            letter-spacing: 2px;
+        }
+
+        #section_3 p {
+            text-align: center;
+            color: rgb(133, 22, 105);
+            font-family: microsoft jhengHei;
+            letter-spacing: 2px;
+        }
+
+        /*以上是第四區 */
+
+        #section_4 {
+            background-color: white;
+            padding: 1px 200px;
+
+        }
+
+        #section_4.container.left_box {
+            text-align: center;
+
+        }
+
+        #section_4 div.left_box {
+            float: left;
+            width: 33.33%;
+            padding: 0 20px;
+            text-align: center;
+
+        }
+
+        #section_4.left_box img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #section_4 h1 {
+            text-align: center;
+            font-family: microsoft jhengHei;
+            color: #eaadbc;
+            letter-spacing: 2px;
+        }
+
+        #section_4 p {
+            text-align: center;
+            color: rgb(133, 22, 105);
+            font-family: microsoft jhengHei;
+            letter-spacing: 2px;
+        }
+
+        /* 以上是第五區 */
+        #section_5 {
+            text-align: center;
+
+        }
+
+        /* 以上是第六區 */
+        #section_6 .main-title {
+            text-align: center;
+            font-size: 30px;
+            color: #E37BD1;
+            line-height: 1.2;
+            padding: 18px;
+            border-bottom: 2px solid #E6AADD;
+            letter-spacing: 2px;
+        }
+      
+
+        /*以上是裝飾線  */
+
+        #section_7 {
+            width: 100%;
+            background-image: url(../img/card/bg-pink02.jpg);
+            background-size: cover;
+            background-position: 25% 20%;
+            margin-bottom: 20px;
+        }
+
+        #section_7 p {
+            text-align: center;
+            font-size: 20px;
+            color: rgb(133, 22, 105);
+            font-family: microsoft jhengHei;
+            letter-spacing: 2px;
+        }
+
+        /* 以上是第七區 */
+        #section_8 {
+            text-align: center;
+            font-size: 30px;
+            color: #E37BD1;
+            line-height: 1.2;
+            padding: 0px;
+            border-bottom: 2px solid #E6AADD;
+        }
+
+        /* 以上是第八區 */
+        #section_9 {
+            background-color: white;
+            padding: 60px 0;
+        }
+
+        .tainer {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #section_9 .left_box {
+            float: left;
+            width: 50%;
+            padding: 0 20px;
+
+        }
+
+        .tainer img {
+            float: right;
+            margin: 0 -110px;
+        }
+
+        #section_9 h2 {
+            font-size: 25px;
+            color: rgb(133, 22, 105);
+            font-family: microsoft jhengHei;
+            line-height: 42px;
+            padding:2px;
+            
+        }
+
+        #section_9 h3 {
+            text-align: center;
+            letter-spacing: 20px;
+            font-size: 30px;
+            color: rgb(133, 22, 105);
+            font-family: microsoft jhengHei;
+            
+        }
+
+        .coner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            font-size: 12px;
+            background-color: rgb(247, 215, 241);
+            color: rgb(148, 9, 125);
+            padding: 8px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 版面最上方的nav-->
+    <nav id="sub_nav"></nav>
+
+    <!-- 背景圖片+parallax -->
+    <section id="bg_banner">
+        <div class="container">
+            <h1 class="title">
+                多種風格選擇，客製化設計 <br>
+                滿足你對指尖與整體造型的完美需求
+            </h1>   
+        </div>
+        <!-- <img src="logo 06.png" width="300px" style="padding: 50px 0;"> -->
+    </section>
+
+    <!-- 主要選單+position:sticky -->
+    <nav id="main_nav">
+        <div class="container">
+            <a class="nav_link" href="#section_1">關於Lalun</a>
+            <a class="nav_link" href="#section_2">最新消息</a>
+            <a class="nav_link" href="#section_3">美甲服務</a>
+            <a class="nav_link" href="#section_4">美甲作品</a>
+            <a class="nav_link" href="#section_5">聯絡資訊</a>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+
+
+    <section id="section1">
+        <div class="container">
+            <div class="left_box">
+                <img src="b.jpg" width="100%" height="20%">
+                <h1>成立時間</h1>
+                <p>2018/6/30 一人工作室</p>
+            </div>
+            <div class="left_box">
+                <img src="工作照.jpg" width="100%" height="20%">
+                <h1>成立理念</h1>
+                <p>讓美好的事物存在於每一天、每一刻與每一個獨一無二的你，
+                    透過美甲的藝術和人與人之間的交流，
+                    找到專屬你的那個故事，詮釋你對指尖美感的不同感受。</p>
+            </div>
+            <div class="left_box">
+                <img src="a.jpg" width="100%" height="20%">
+                <h1>成立使命</h1>
+                <p>以最真誠、親切、相互交流的態度，
+                    滿足你對指尖與整體造型的美好需求，成為彼此生活中的美好小確信。</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+    <section id="section_2">
+        <div class="left_box">
+            <h1>公告事項</h1>
+            <p>迎接新的一年~手指換新衣優惠活動開跑 <br>
+                優惠活動到2019/2/30截止，快來參考看看唷</p>
+        </div>
+        <div class="right_box">
+            <h1>優惠活動</h1>
+            <p>A.新客人~快看過來6款任選手部光療造型只要 $999<br>
+                單色光療 $699、單色足部光療 $899優惠活動只到2019/2/30截止
+            </p>
+            <p>B.凡消費的客人們都有優惠唷 <br>
+                凡本店美甲相關作品標記分享現折$50，活動只到2019/2/30截止
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+    <section id="section_3">
+        <div class="container_1">
+            <div class="left_box">
+                <img src="2.jpg" width="340px" height="20%">
+                <h1>手足保養</h1>
+                <p>基本的手足基本保養讓你擁有乾淨、美麗、健康的手足</p>
+            </div>
+            <div class="right_box">
+                <img src="3.jpg" width="340px" height="20%">
+                <h1>手足卸甲</h1>
+                <p>使用正確的卸甲方式，讓你的指甲美的健康</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="section_4">
+        <div class="container_2">
+            <div class="left_box">
+                <img src="4.jpg" width="340px" height="20%">
+                <h1>一般指彩</h1>
+                <p>提供最繽紛多彩的指甲油顏色選擇，讓指尖成為妳展現個人獨特魅力</p>
+            </div>
+            <div class="left_box">
+                <img src="5.jpg" width="340px" height="20%">
+                <h1>凝膠指甲</h1>
+                <p>打造獨特、創新、客製化的美甲為你服務</p>
+            </div>
+            <div class="left_box">
+                <img src="6.jpg" width="340px" height="20%">
+                <h1>水晶指甲</h1>
+                <p>為你做出漂亮的指甲，矯正不好看的指形</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section id="section_5">
+        <img src="7.jpg">
+        <div class="clearfix"></div>
+    </section>
+
+    <section id="section_6">
+        <div class="main-title">
+            <b>作品集</b>
+        </div>
+        <h1 style="text-align: center; color: rgb(133, 22, 105);font-size: 25px;">所謂的美麗，取決於你的心，專屬你的美麗，由你決定</h1>
+        </div>
+    </section>
+
+    <section id="section_7">
+        <div class="container">
+            <div class="section-1">
+                <div class="subtitle5" style="padding:0 0">
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="float: left;padding: 0px 30px;">
+                        <img src="aa01.jpg" width="340" height="20%">
+                        <p> <b>A.</b>客製化款式</p>
+                    </div>
+                    <div class="col-md-4" style="float: left;padding: 0px 30px;">
+                        <img src="aa02.jpg" width="340" height="20%">
+                        <p> <b>B.</b>造型款式</p>
+                    </div>
+                    <div class="col-md-4" style="float: left;padding: 0px 30px;">
+                        <img src="aa04.jpg" width="340" height="20%">
+                        <p> <b>C.</b>純色基本款</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+
+    <section id="section_8">
+        </div>
+        <div class="clearfix"></div>
+    </section>
+
+    <section id="section_9">
+        <div class="tainer">
+            <div class="left_box">
+                <img src="google.png" alt="">
+            </div>
+            <div class="right_box" style="float: right;">
+
+                <h2> <span style="color:#E37BD1">Line→ </span>ext7209</h2>
+                <h2> <span style="color:#E37BD1">工作室地址→ </span> 台中市西區公館路169號</h2>
+                <h2> <span style="color:#E37BD1">電話→</span> 0989-323-192</h2>
+                <h2><span style="color:#E37BD1">臉書官網→</span> facebook.com/yang.s.qian.3</h2>
+                <h3>歡迎您來電諮詢/預約</h3>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="coner">
+            Copyright © 2018 Apple Inc. 保留一切權利。
+        </div>
+    </footer>
+</body>
+
+</html>
